@@ -1,0 +1,24 @@
+{
+  "date": "2025-07-24",
+  "sign": "Cancer",
+  "prediction": "\u264b Cancer \u2014 Intuitive and caring\n\n\u2728 Today's Vision:\nTake a deep breath \u2014 peace is within you \ud83c\udf3f",
+  "color": "#CAFFBF",
+  "2025-07-24": {
+    "Taurus": {
+      "prediction": "\u2649 Taurus \u2014 Reliable and patient\n\n\u2728 Today's Vision:\nSomeone close to you has good news \ud83c\udf89",
+      "color": "#FFD6A5"
+    },
+    "Gemini": {
+      "prediction": "\u264a Gemini \u2014 Witty and curious\n\n\u2728 Today's Vision:\nBe bold \u2014 fortune favors the brave \ud83d\ude80",
+      "color": "#FDFFB6"
+    },
+    "Libra": {
+      "prediction": "\u264e Libra \u2014 Balanced and fair\n\n\u2728 Today's Vision:\nSomeone close to you has good news \ud83c\udf89",
+      "color": "#BDB2FF"
+    },
+    "Scorpio": {
+      "prediction": "\u264f Scorpio \u2014 Passionate and brave\n\n\u2728 Today's Vision:\nA creative spark will ignite your mind today \ud83c\udfa8",
+      "color": "#FFC6FF"
+    }
+  }
+}
