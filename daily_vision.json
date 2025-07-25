@@ -1,18 +1,22 @@
 {
   "Aries": [
     "Take bold action today.",
-    "Stay open to surprise opportunities.",
-    "Your energy is magnetic today."
+    "Your energy is magnetic.",
+    "Expect great things."
   ],
   "Taurus": [
-    "Stability is your friend.",
-    "Take time to enjoy small comforts.",
-    "Your persistence pays off today."
+    "Be patient today.",
+    "Small steps yield big results.",
+    "Focus on your comfort."
   ],
   "Gemini": [
     "Speak your truth.",
-    "Curiosity leads to insight.",
-    "New ideas will spark."
+    "Curiosity leads the way.",
+    "A message will arrive."
+  ],
+  "Cancer": [
+    "Nurture your inner circle.",
+    "Intuition is your power.",
+    "Be gentle with yourself."
   ]
-  // Add other signs similarly
 }
