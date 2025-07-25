@@ -18,5 +18,45 @@
     "Nurture your inner circle.",
     "Intuition is your power.",
     "Be gentle with yourself."
+  ],
+  "Leo": [
+    "Shine without fear.",
+    "Your passion inspires others.",
+    "Take the stage!"
+  ],
+  "Virgo": [
+    "Details lead to success.",
+    "Organize for clarity.",
+    "Make a plan and follow it."
+  ],
+  "Libra": [
+    "Balance is your strength.",
+    "Seek harmony in choices.",
+    "A beautiful moment awaits."
+  ],
+  "Scorpio": [
+    "Trust your instincts.",
+    "Transformation is near.",
+    "Your depth is powerful."
+  ],
+  "Sagittarius": [
+    "Adventure is calling.",
+    "Learn something new.",
+    "Let curiosity guide you."
+  ],
+  "Capricorn": [
+    "Discipline brings reward.",
+    "Set goals and rise.",
+    "Build your legacy today."
+  ],
+  "Aquarius": [
+    "Think differently.",
+    "Inspire your community.",
+    "Innovation surrounds you."
+  ],
+  "Pisces": [
+    "Let your dreams flow.",
+    "Compassion is your magic.",
+    "Trust the unseen."
   ]
 }
