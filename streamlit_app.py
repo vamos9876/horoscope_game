@@ -1,34 +1,37 @@
 import streamlit as st
+import pandas as pd
+import random
+import time
 import json
-import datetime
-from pathlib import Path
+from datetime import datetime
 
+# 🎨 Page setup
 st.set_page_config(page_title="Horoscope Game", page_icon="🔮")
 
-st.title("🔮 Horoscope Game")
+st.markdown("<h1 style='text-align: center;'>🔮 Horoscope Game 🔮</h1>", unsafe_allow_html=True)
 
-# Load JSON file
-with open("daily_vision.json") as f:
+# 🎯 Load visions (daily messages)
+with open("daily_vision.json", "r") as f:
     visions = json.load(f)
 
-# Zodiac signs
-zodiacs = list(visions.keys())
+zodiac_signs = list(visions.keys())
 
-# UI
 col1, col2 = st.columns(2)
-selected_sign = col1.selectbox("Select your zodiac sign", [""] + zodiacs)
+
+selected_sign = col1.selectbox("Select your zodiac sign", options=zodiac_signs)
 birthdate = col2.text_input("Or enter birthdate (YYYY-MM-DD)")
 
-# Determine today's index
-today = datetime.datetime.now().day % 3  # Cycles 0–2
+st.markdown("<br>", unsafe_allow_html=True)
 
-# Button
+# 🚀 Button to reveal vision
 if st.button("🔍 Reveal Today’s Vision"):
-    if birthdate:
-        st.markdown("☝️ Birthdate input not yet used in logic.")
-    elif selected_sign:
-        vision = visions[selected_sign][today]
-        st.markdown(f"### ✨✨ {vision} ✨✨")
-        st.markdown("<p style='text-align: center; font-size: 16px; color: grey;'>Don't ignore it.</p>", unsafe_allow_html=True)
-    else:
-        st.warning("Please select your zodiac sign or enter birthdate.")
+    with st.spinner("✨ Reading the stars..."):
+        time.sleep(3)  # Delay effect like "magic"
+    
+    # 🌟 Select vision
+    if selected_sign:
+        today = datetime.now().date()
+        random.seed(f"{selected_sign}-{today}")  # ensure one vision per day per sign
+        vision = random.choice(visions[selected_sign])
+        st.markdown(f"<h2 style='text-align: center;'>✨✨ {vision} ✨✨</h2>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center; color: gray;'>Don't ignore it.</p>", unsafe_allow_html=True)
