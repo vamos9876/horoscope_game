@@ -41,5 +41,6 @@ if st.button("🔍 Reveal Today’s Vision"):
         i = get_daily_index(messages, sign)
         vision = messages[i]
         st.markdown(f"### ✨✨ {vision} ✨✨")
+st.markdown("<p style='text-align: center; font-size: 16px; color: grey;'>Don't ignore it.</p>", unsafe_allow_html=True)
     else:
         st.warning("Please select a valid zodiac sign.")
